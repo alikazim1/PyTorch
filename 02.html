@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="02.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="openbtn" onclick="toggleSidebar()">☰</button>
+    <div class="sidebar" id="sidebar">
+      <h2>Chapter Navigation</h2>
+      <a href="#section1">Prerequisites</a>
+      <a href="#section2">Introduction to AI</a>
+      <a href="#section3">PyTorch</a>
+      <a href="#section4">Where PyTorch is used?</a>
+      <a href="#section5">Setting up Environment for PyTorch</a>
+      <a href="#section6">Tensor</a>
+      <a href="#section7">Methods in Tensor</a>
+      <a href="#section8">Tensor Operations</a>
+      <a href="#section9">Playing More</a>
+      <a href="#section10">Interoperability with NumPy</a>
+      <a href="#section11">Reproducibility</a>
+      <a href="#section12">GPU Action</a>
+      <a href="#section13">Exercise</a>
+    </div>
+
+    <div class="content">
+      <h1>01. PyTorch Workflow Fundamentals</h1>
+
+      <p>
+        Training a deep learning neural network is similar to a professor
+        training a student for an exam. Initially, the professor gathers the
+        syllabus and splits it into a training part and a test part. The student
+        is trained on the training material and is then subjected to the test.
+        Based on the test results, the professor calculates the score and
+        suggests that the student minimize their errors. Similarly, in deep
+        learning, a model is trained on a dataset and then evaluated on a test
+        set, with adjustments made to minimize the loss function.
+      </p>
+      <img
+        src="./02/neural_network_training_analogy.png"
+        class="centered-image"
+      />
+
+      <p>
+        The crux of machine and deep learning is to take data, build an
+        algorithm(neural network) to discover deep patterns in it and use the
+        discovered patterns to generate new data.
+      </p>
+      <img src="./02/deepLearningpng.png" class="centered-image" />
+
+      <p>
+        There are many ways to design this process. We start from the very
+        basic; which is predicting a straight line. We will see if we can build
+        a PyTorch model that learns the patterns of straight line and matches
+        it.
+      </p>
+      <br />
+      <img src="./02/2.png" class="centered-image" />
+
+      <p>
+        All of the materials for this course are available on
+        <a href="" target="_blank">GitHub</a>
+      </p>
+      <p>
+        If you got into any trouble, you can ask questions on the
+        <a href="https://discuss.pytorch.org/" target="_blank"
+          >Discussion page</a
+        >
+        there too.
+      </p>
+      <p>Here we go...</p>
+      <pre>
+      <code>
+      import torch
+      from torch import nn # nn contains all of PyTorch's building blocks for neural networks
+      import matplotlib.pyplot as plt
+      
+      # Check PyTorch version
+      torch.__version__
+    </code></pre>
+    </div>
+  </body>
+  <script src="02.js"></script>
+</html>
